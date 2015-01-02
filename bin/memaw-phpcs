@@ -1,0 +1,5 @@
+#!/usr/bin/env php
+<?php
+require getcwd() . '/vendor/autoload.php';
+$phpcs = new \Memaw\Phpcs\Cli();
+exit($phpcs->process());

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset name="Memaw">
+    <description>Memaw coding standard</description>
+    <rule ref="PSR2"/>
+    <rule ref="PEAR">
+        <exclude name="PEAR.Commenting.FileComment"/>
+        <exclude name="PEAR.Commenting.ClassComment"/>
+        <exclude name="PEAR.Files.IncludingFile"/>
+        <exclude name="PEAR.Files.IncludingFile"/>
+        <exclude name="PEAR.Functions.FunctionCallSignature"/>
+        <exclude name="PEAR.NamingConventions.ValidVariableName"/>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="200"/>
+            <property name="absoluteLineLimit" value="200"/>
+        </properties>
+    </rule>
+</ruleset>

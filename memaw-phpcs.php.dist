@@ -1,0 +1,7 @@
+<?php
+return <<<eof
+{
+    "files":        ["src", "bin/memaw-phpcs"],
+    "showProgress": true
+}
+eof;

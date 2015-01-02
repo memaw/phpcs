@@ -1,0 +1,34 @@
+{
+    "name": "memaw/phpcs",
+    "license": "BSD-3-Clause",
+    "description": "Memaw phpcs (an extension of squizlabs/PHP_CodeSniffer) implement a configuration file for the phpcs execution and add the Memaw standard.",
+    "type": "library",
+    "keywords": [
+        "phpcs",
+        "Memaw",
+        "standards",
+        "configuration"
+    ],
+    "authors": [
+        {
+            "name": "maw",
+            "role": "lead",
+            "email": "maw@memaw.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "squizlabs/php_codesniffer": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {"": "src/"}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "bin": [
+        "bin/memaw-phpcs"
+    ]
+}
