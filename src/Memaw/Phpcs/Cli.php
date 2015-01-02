@@ -51,7 +51,15 @@ class Cli
         \PHP_CodeSniffer_Reporting::startTiming();
         $phpcs = new \PHP_CodeSniffer_CLI();
         $phpcs->checkRequirements();
-        return $phpcs->process($this->defaultValues);
+
+        $values        = $phpcs->getCommandLineValues();
+        foreach ($this->defaultValues as $k => $v) {
+            if (empty($values[$k])) {
+                $values[$k] = $v;
+            }
+        }
+
+        return $phpcs->process($values);
     }
 
     /**
